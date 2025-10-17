@@ -26,7 +26,7 @@ const Form = () => {
   };
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-yellow-50 to-orange-100 p-6">
-      <h1 className="text-4xl font-serif font-bold mb-8 text-center">
+      <h1 className="text-4xl font-serif font mb-10 text-center">
         Make Your Diwali Card ✨
       </h1>
 
@@ -49,7 +49,7 @@ const Form = () => {
           <div className="flex gap-3 mt-4">
             <button
               onClick={() => setStyle("modern")}
-              className={`flex-1 rounded-lg py-2 font-semibold ${
+              className={`flex-1 rounded-lg py-2 ${
                 style === "modern"
                   ? "bg-yellow-600 text-white"
                   : "border border-yellow-600 text-yellow-600 transition-colors duration-300 ease-in-out cursor-pointer"
@@ -59,7 +59,7 @@ const Form = () => {
             </button>
             <button
               onClick={() => setStyle("traditional")}
-              className={`flex-1 rounded-lg py-2 font-semibold ${
+              className={`flex-1 rounded-lg py-2 ${
                 style === "traditional"
                   ? "bg-orange-500 text-white"
                   : "border border-orange-500 text-orange-500  transition-colors duration-300 ease-in-out cursor-pointer"
@@ -82,7 +82,7 @@ const Form = () => {
 
       <button
         onClick={handleDownload}
-        className="mt-15 bg-black text-white px-6 py-2 rounded-lg font-semibold hover:opacity-90 cursor-pointer hover:scale-[1.02]"
+        className="mt-15 bg-black text-white px-6 py-2 rounded-lg  hover:opacity-90 cursor-pointer hover:scale-[1.02]"
       >
         Download Card
       </button>

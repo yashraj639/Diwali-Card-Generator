@@ -53,7 +53,7 @@ const TraditionalCard = ({ to, from, message }) => {
             <div className="h-px bg-gradient-to-r from-transparent via-orange-400 to-transparent mt-3"></div>
           </div>
 
-          <div className="mt-4 space-y-1">
+          <div className="space-y-1">
             {to && (
               <p className="text-sm font-serif font-semibold text-orange-800 py-2">
                 To: <span className="text-red-700">{to}</span>
